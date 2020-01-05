@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Голосование за животных</title>
+	</head>
+	<body>
+		<div class="container">
+			<br>
+			<h1>Выберите любимое животное</h1>
+			<br>
+			<h1 id="voted">Голос принят!</h1>
+			
+			<div class="group-buttons">
+			<button id='dogs' onclick="postRequest('dogs')" type="button">Собака</button>
+			<button id='cats' onclick="postRequest('cats')" type="button">Кот</button>
+			<button id='parrots' onclick="postRequest('parrots')" type="button">Попугай</button>
+			</div>
+			<br>
+			<div>
+				<button id='result' onclick="window.open('result.html')" type='button' class='btn_result'>Посмотреть результаты</button>
+			</div>
+		</div>
+		
+		<script src="./js/jquery-3.4.1.min.js"></script>
+	    <script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="script/script1.js"></script>
+	</body>
+</html>
